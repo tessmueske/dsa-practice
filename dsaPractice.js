@@ -2,8 +2,13 @@
 
 //Write a function countVowels(str) that returns the number of vowels (a, e, i, o, u) in the input string. The input will be a string of lowercase letters.
 function countVowels(str) {
-    console.log("Running countVowels");
-    return 0; 
+    let count = 0
+    let vowels = ["a", "e", "i", "o", "u"] //this works, you could also turn it into a set and use .has()
+    for (let letter of str){
+        if (vowels.includes(letter)){ // NOT letter.includes(vowels)
+            count ++
+        }
+    } return count
   }
   
 
