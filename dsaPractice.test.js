@@ -1,32 +1,26 @@
 // dsaPractice.test.js
 const assert = require('assert');
-const { countVowels } = require('./dsaPractice');
+const {
+  countVowels,
+  squareEvens,
+  wordFrequency
+} = require('./dsaPractice');
 
+// countVowels tests
 assert.strictEqual(countVowels("hello"), 2);
 assert.strictEqual(countVowels("rhythm"), 0);
 assert.strictEqual(countVowels("aeiou"), 5);
 assert.strictEqual(countVowels("mississippi"), 4);
+console.log("All countVowels tests passed!");
 
-console.log("✅ All countVowels tests passed!");
-
-
-//
-
-const assert = require('assert');
-const { squareEvens } = require('./dsaPractice');
-
+// squareEvens tests
 assert.deepStrictEqual(squareEvens([1, 2, 3, 4]), [4, 16]);
 assert.deepStrictEqual(squareEvens([0, 1, 5, 6]), [0, 36]);
 assert.deepStrictEqual(squareEvens([1, 3, 5]), []);
 assert.deepStrictEqual(squareEvens([2, 2, 2]), [4, 4, 4]);
+console.log("All squareEvens tests passed!");
 
-console.log("✅ All squareEvens tests passed!");
-
-//
-
-const assert = require('assert');
-const { wordFrequency } = require('./dsaPractice');
-
+// wordFrequency tests
 assert.deepStrictEqual(
   wordFrequency("Hello world! Hello again."),
   { hello: 2, world: 1, again: 1 }
@@ -39,5 +33,4 @@ assert.deepStrictEqual(
   wordFrequency("One fish two fish red fish blue fish"),
   { one: 1, fish: 4, two: 1, red: 1, blue: 1 }
 );
-
-console.log("✅ All wordFrequency tests passed!");
+console.log("All wordFrequency tests passed!");
