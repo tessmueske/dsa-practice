@@ -14,8 +14,23 @@ function countVowels(str) {
 
 //Write a function squareEvens(arr) that takes an array of integers and returns a new array with only the even numbers, each squared.
 function squareEvens(arr) {
-    console.log("Running squareEvens");
-    return []; 
+    let newArr= []
+    for (let i = 0; i<arr.length; i++){
+        let numSq = Math.pow(arr[i], 2)
+        if (numSq % 2 === 0) {
+            newArr.push(numSq)
+        }
+    } return newArr
+
+
+
+    // for (let num of arr){
+    //     arr.filter(() => {
+    //         if (num % 2 === 0){
+    //             newArr.push(numSq)
+    //         }
+    //     })
+    // } 
   }
   
 

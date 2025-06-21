@@ -1,24 +1,24 @@
 // dsaPractice.test.js
 const assert = require('assert');
 const {
-  countVowels,
-//   squareEvens,
+  // countVowels,
+   squareEvens
 //   wordFrequency
 } = require('./dsaPractice');
 
 // countVowels tests
-assert.strictEqual(countVowels("hello"), 2);
-assert.strictEqual(countVowels("rhythm"), 0);
-assert.strictEqual(countVowels("aeiou"), 5);
-assert.strictEqual(countVowels("mississippi"), 4);
-console.log("All countVowels tests passed!");
+// assert.strictEqual(countVowels("hello"), 2);
+// assert.strictEqual(countVowels("rhythm"), 0);
+// assert.strictEqual(countVowels("aeiou"), 5);
+// assert.strictEqual(countVowels("mississippi"), 4);
+// console.log("All countVowels tests passed!");
 
 // // squareEvens tests
-// assert.deepStrictEqual(squareEvens([1, 2, 3, 4]), [4, 16]);
-// assert.deepStrictEqual(squareEvens([0, 1, 5, 6]), [0, 36]);
-// assert.deepStrictEqual(squareEvens([1, 3, 5]), []);
-// assert.deepStrictEqual(squareEvens([2, 2, 2]), [4, 4, 4]);
-// console.log("All squareEvens tests passed!");
+assert.deepStrictEqual(squareEvens([1, 2, 3, 4]), [4, 16]);
+assert.deepStrictEqual(squareEvens([0, 1, 5, 6]), [0, 36]);
+assert.deepStrictEqual(squareEvens([1, 3, 5]), []);
+assert.deepStrictEqual(squareEvens([2, 2, 2]), [4, 4, 4]);
+console.log("All squareEvens tests passed!");
 
 // // wordFrequency tests
 // assert.deepStrictEqual(
