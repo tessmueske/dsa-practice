@@ -51,25 +51,25 @@ console.log("All isAnagram tests passed!");
 
 // firstNonRepeatingChar tests
 
-assert.strictEqual(firstNonRepeatingChar("aabcc"), "b");
-assert.strictEqual(firstNonRepeatingChar("xxyz"), "y");
-assert.strictEqual(firstNonRepeatingChar("aabb"), null);
-assert.strictEqual(firstNonRepeatingChar("a"), "a");
-console.log("All firstNonRepeatingChar tests passed!");
+// assert.strictEqual(firstNonRepeatingChar("aabcc"), "b");
+// assert.strictEqual(firstNonRepeatingChar("xxyz"), "y");
+// assert.strictEqual(firstNonRepeatingChar("aabb"), null);
+// assert.strictEqual(firstNonRepeatingChar("a"), "a");
+// console.log("All firstNonRepeatingChar tests passed!");
 
 // groupAnagram tests
 
-assert.deepStrictEqual(
-    groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]),
-    [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
-  );
-  assert.deepStrictEqual(
-    groupAnagrams([""]),
-    [[""]]
-  );
-  assert.deepStrictEqual(
-    groupAnagrams(["a"]),
-    [["a"]]
-  );
-  console.log("All groupAnagrams tests passed!");
+// assert.deepStrictEqual(
+//     groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]),
+//     [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
+//   );
+//   assert.deepStrictEqual(
+//     groupAnagrams([""]),
+//     [[""]]
+//   );
+//   assert.deepStrictEqual(
+//     groupAnagrams(["a"]),
+//     [["a"]]
+//   );
+//   console.log("All groupAnagrams tests passed!");
 

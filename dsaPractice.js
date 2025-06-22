@@ -42,7 +42,13 @@ function wordFrequency(str) {
 // Write a function isAnagram(str1, str2) that returns true if str1 and str2 are anagrams of each other (same letters, same frequency), and false otherwise. Ignore case and spaces.
 
 function isAnagram(str1, str2) {
-    // your code here
+    let sort1 = str1.toLowerCase().replace(/\s/g, '').split('').sort().join('') //the .replace() part cleans out the spaces and characters - /\s/ means to replace any whitespace character like a space, a tab, a new line, etc, and the g is globally
+    let sort2 = str2.toLowerCase().replace(/\s/g, '').split('').sort().join('')
+    if (sort1 === sort2){
+        return true
+    } else {
+        return false
+    }
   }
 
 
