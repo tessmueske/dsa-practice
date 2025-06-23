@@ -79,8 +79,20 @@ function firstNonRepeatingChar(str) {
 // Write a function groupAnagrams(words) that groups a list of words into anagrams.
 
 function groupAnagrams(words) {
-    // your code here
-  }
+    // initialize empty object to store the hashmap
+    let hashmap = {}
+    // so we need to loop through the words, split them, sort them, re-join them
+    for (let word of words){
+        let x = word.split('').sort().join('') // this is creating a key
+
+        if (!hashmap[x]) { // like if that word's hashmap doesn't exist (aka the key), we initialize a new one
+            hashmap[x] = [];
+        }
+
+        hashmap[x].push(word)
+
+    } return Object.values(hashmap); // returns an array of the values in the hashmap Object
+}
   
   module.exports = {
     countVowels,

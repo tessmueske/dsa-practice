@@ -59,17 +59,17 @@ console.log("All firstNonRepeatingChar tests passed!");
 
 // groupAnagram tests
 
-// assert.deepStrictEqual(
-//     groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]),
-//     [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
-//   );
-//   assert.deepStrictEqual(
-//     groupAnagrams([""]),
-//     [[""]]
-//   );
-//   assert.deepStrictEqual(
-//     groupAnagrams(["a"]),
-//     [["a"]]
-//   );
-//   console.log("All groupAnagrams tests passed!");
+assert.deepStrictEqual(
+    groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]),
+    [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
+  );
+  assert.deepStrictEqual(
+    groupAnagrams([""]),
+    [[""]]
+  );
+  assert.deepStrictEqual(
+    groupAnagrams(["a"]),
+    [["a"]]
+  );
+  console.log("All groupAnagrams tests passed!");
 
