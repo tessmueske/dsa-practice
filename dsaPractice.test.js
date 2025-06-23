@@ -1,4 +1,5 @@
-// dsaPractice.test.js
+// dsaPractice.test.js - using Node.js's assert module
+
 const assert = require('assert');
 const {
     countVowels,
@@ -7,6 +8,7 @@ const {
     isAnagram,
     firstNonRepeatingChar,
     groupAnagrams,
+    groupWordsByLength,
 } = require('./dsaPractice');
 
 // countVowels tests
@@ -73,3 +75,30 @@ assert.deepStrictEqual(
   );
   console.log("All groupAnagrams tests passed!");
 
+// groupWordsByLength tests
+
+const assert = require("assert");
+
+// groupWordsByLength tests
+
+assert.deepStrictEqual(
+  groupWordsByLength(["cat", "hi", "bat", "hello", "me", "see", "a"]),
+  [["cat", "bat", "see"], ["hi", "me"], ["hello"], ["a"]]
+);
+
+assert.deepStrictEqual(
+  groupWordsByLength(["", "a", "bb", "ccc", "dd", "ee"]),
+  [["", "a"], ["bb", "dd", "ee"], ["ccc"]]
+);
+
+assert.deepStrictEqual(
+  groupWordsByLength(["one", "two", "three", "four", "five", "six"]),
+  [["one", "two", "six"], ["three"], ["four", "five"]]
+);
+
+assert.deepStrictEqual(
+  groupWordsByLength([]),
+  []
+);
+
+console.log("All groupWordsByLength tests passed!");

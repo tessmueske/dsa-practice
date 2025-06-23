@@ -93,6 +93,12 @@ function groupAnagrams(words) {
 
     } return Object.values(hashmap); // returns an array of the values in the hashmap Object
 }
+
+// Write a function groupWordsByLength(words) that takes an array of strings and groups them by their length. Return an array of arrays, where each sub-array contains words of the same length.
+
+function groupWordsByLength(words) {
+    //code here
+}
   
   module.exports = {
     countVowels,
@@ -101,4 +107,5 @@ function groupAnagrams(words) {
     isAnagram,
     firstNonRepeatingChar,
     groupAnagrams,
+    groupWordsByLength,
   };
