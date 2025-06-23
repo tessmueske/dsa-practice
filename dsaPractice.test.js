@@ -77,10 +77,6 @@ assert.deepStrictEqual(
 
 // groupWordsByLength tests
 
-const assert = require("assert");
-
-// groupWordsByLength tests
-
 assert.deepStrictEqual(
   groupWordsByLength(["cat", "hi", "bat", "hello", "me", "see", "a"]),
   [["cat", "bat", "see"], ["hi", "me"], ["hello"], ["a"]]
