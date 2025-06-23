@@ -51,11 +51,11 @@ console.log("All isAnagram tests passed!");
 
 // firstNonRepeatingChar tests
 
-// assert.strictEqual(firstNonRepeatingChar("aabcc"), "b");
-// assert.strictEqual(firstNonRepeatingChar("xxyz"), "y");
-// assert.strictEqual(firstNonRepeatingChar("aabb"), null);
-// assert.strictEqual(firstNonRepeatingChar("a"), "a");
-// console.log("All firstNonRepeatingChar tests passed!");
+assert.strictEqual(firstNonRepeatingChar("aabcc"), "b");
+assert.strictEqual(firstNonRepeatingChar("xxyz"), "y");
+assert.strictEqual(firstNonRepeatingChar("aabb"), null);
+assert.strictEqual(firstNonRepeatingChar("a"), "a");
+console.log("All firstNonRepeatingChar tests passed!");
 
 // groupAnagram tests
 

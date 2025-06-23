@@ -55,9 +55,26 @@ function isAnagram(str1, str2) {
 // Write a function firstNonRepeatingChar(str) that returns the first character in the string that doesn’t repeat. If all characters repeat, return null.
 
 function firstNonRepeatingChar(str) {
-    // your code here
-  }
+    // initialize empty object (hashmap)
+    // split the string into separate characters
+    // count the frequency of each character
+    // if any hashmap has a count of only 1, return the character
+    // if all characters repeat, return null
 
+    let freq = {} 
+
+    for (let char of str){
+        if (char) {
+            freq[char] = (freq[char] || 0) + 1 
+        }
+    } // this loop counts how many times each character appears
+
+    for (let char of str){
+        if (freq[char] === 1) { // we want the first non-repeating character (aka the count is 1)
+            return char
+        } 
+    } return null;
+}
 
 // Write a function groupAnagrams(words) that groups a list of words into anagrams.
 

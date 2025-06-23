@@ -1,6 +1,6 @@
 # dsa-practice
 
-Brushing up on my string manipulation, array transformation, and other DSA skills!
+Brushing up on my string manipulation, array transformation, and other DSA skills! I also practice on Leetcode, Neetcode, and HackerRank.
 
 View my portfolio here: https://tess-mueske.onrender.com/
 
