@@ -12,6 +12,7 @@ function countVowels(str) {
     } return count
   }
   
+// ******************************************************************
 
 // Write a function squareEvens(arr) that takes an array of integers and returns a new array with only the even numbers, each squared.
 
@@ -25,6 +26,7 @@ function squareEvens(arr) {
     } return newArr
 }
   
+// ******************************************************************
 
 // Write a function wordFrequency(str) that takes a string and returns an object with the frequency of each word. Ignore punctuation and treat words case-insensitively.
 
@@ -39,6 +41,8 @@ function wordFrequency(str) {
     return freq;
   }
 
+// ******************************************************************
+
 // Write a function isAnagram(str1, str2) that returns true if str1 and str2 are anagrams of each other (same letters, same frequency), and false otherwise. Ignore case and spaces.
 
 function isAnagram(str1, str2) {
@@ -51,6 +55,7 @@ function isAnagram(str1, str2) {
     }
   }
 
+// ******************************************************************
 
 // Write a function firstNonRepeatingChar(str) that returns the first character in the string that doesn’t repeat. If all characters repeat, return null.
 
@@ -76,6 +81,8 @@ function firstNonRepeatingChar(str) {
     } return null;
 }
 
+// ******************************************************************
+
 // Write a function groupAnagrams(words) that groups a list of words into anagrams.
 
 function groupAnagrams(words) {
@@ -94,12 +101,38 @@ function groupAnagrams(words) {
     } return Object.values(hashmap); // returns an array of the values in the hashmap Object
 }
 
+// ******************************************************************
+
 // Write a function groupWordsByLength(words) that takes an array of strings and groups them by their length. Return an array of arrays, where each sub-array contains words of the same length.
 
 function groupWordsByLength(words) {
     //code here
 }
   
+// ******************************************************************
+
+// Write a function that takes an array of integers and returns the sum of the squares of all even numbers using filter and reduce.
+
+function sumEvenSquares(arr) {
+    //code here
+}
+  
+// ******************************************************************
+
+// Write a function wordLengths that takes a sentence (string) and returns an array containing the length of each word. Ignore extra spaces.
+
+function wordLengths(arr) {
+    //code here
+}
+
+// ******************************************************************
+
+// Write a function mostFrequentChar that returns the most frequent character in a string (case-insensitive), ignoring spaces and punctuation.
+
+function mostFrequentChar(arr) {
+    //code here
+}
+
   module.exports = {
     countVowels,
     squareEvens,
@@ -108,4 +141,7 @@ function groupWordsByLength(words) {
     firstNonRepeatingChar,
     groupAnagrams,
     groupWordsByLength,
+    sumEvenSquares,
+    wordLengths,
+    mostFrequentChar
   };
