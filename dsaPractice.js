@@ -106,7 +106,17 @@ function groupAnagrams(words) {
 // Write a function groupWordsByLength(words) that takes an array of strings and groups them by their length. Return an array of arrays, where each sub-array contains words of the same length.
 
 function groupWordsByLength(words) {
-    //code here
+    let arr = {} // this should be an object, not an array
+    for (let word of words){
+        let key = word.length
+        if (!arr[key]){
+            arr[key] = []
+        } 
+        arr[key].push(word)
+    } 
+
+    let ans = Object.keys(arr).sort((a, b) => b - a) // Sort keys (numbers) by descending numeric value, then get corresponding arrays. 
+    return ans
 }
   
 // ******************************************************************

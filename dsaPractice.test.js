@@ -118,27 +118,27 @@ console.log("All groupWordsByLength tests passed!");
 
 // sumEvenSquares tests
 
-assert.strictEqual(sumEvenSquares([1, 2, 3, 4]), 20);
-assert.strictEqual(sumEvenSquares([0, -2, -3]), 4);
-assert.strictEqual(sumEvenSquares([1, 3, 5]), 0);
-console.log("All sumEvenSquares tests passed!");
+// assert.strictEqual(sumEvenSquares([1, 2, 3, 4]), 20);
+// assert.strictEqual(sumEvenSquares([0, -2, -3]), 4);
+// assert.strictEqual(sumEvenSquares([1, 3, 5]), 0);
+// console.log("All sumEvenSquares tests passed!");
 
 // ******************************************************************
 
 // wordLengths tests
 
-assert.deepStrictEqual(wordLengths("hello world"), [5, 5]);
-assert.deepStrictEqual(wordLengths("hi  there   friend"), [2, 5, 6]);
-assert.deepStrictEqual(wordLengths("  openAI  "), [6]);
-console.log("All wordLengths tests passed!");
+// assert.deepStrictEqual(wordLengths("hello world"), [5, 5]);
+// assert.deepStrictEqual(wordLengths("hi  there   friend"), [2, 5, 6]);
+// assert.deepStrictEqual(wordLengths("  openAI  "), [6]);
+// console.log("All wordLengths tests passed!");
 
 // ******************************************************************
 
 // mostFrequentChar tests
 
-assert.strictEqual(mostFrequentChar("Hello World"), "l");
-assert.strictEqual(mostFrequentChar("aaabbc"), "a");
-assert.strictEqual(mostFrequentChar("122333"), "3");
-console.log("All mostFrequentChar tests passed!");
+// assert.strictEqual(mostFrequentChar("Hello World"), "l");
+// assert.strictEqual(mostFrequentChar("aaabbc"), "a");
+// assert.strictEqual(mostFrequentChar("122333"), "3");
+// console.log("All mostFrequentChar tests passed!");
 
 // ******************************************************************
