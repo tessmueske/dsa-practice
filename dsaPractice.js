@@ -115,13 +115,22 @@ function groupWordsByLength(words) {
         arr[key].push(word)
     } 
 
-    let ans = Object.keys(arr).sort((a, b) => b - a) // Sort keys (numbers) by descending numeric value, then get corresponding arrays. 
+    let ans = Object.keys(arr)
+        .sort((a, b) => b - a) // SORT: Sort keys (numbers) by *descending* numeric value (bc the keys are numbers);
+        .map(key => arr[key]) // MAP: then get corresponding arrays to each numeric key. The map creates a new array by applying something to each thing in the original array. 
+    
+        // So for example with key => arr[key] gets the corresponding array for each numeric key. arr[5] gets that array. Then you return the total array.
+        // arr["5"] → ["hello"]
+        // arr["3"] → ["cat", "bat", "see"]
+        // arr["2"] → ["hi", "me"]
+        // arr["1"] → ["a"]
+        
     return ans
 }
   
 // ******************************************************************
 
-// Write a function that takes an array of integers and returns the sum of the squares of all even numbers using filter and reduce.
+// Write a function that takes an array of integers and returns the sum of the squares of all even numbers.
 
 function sumEvenSquares(arr) {
     //code here

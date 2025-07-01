@@ -93,26 +93,26 @@ assert.deepStrictEqual(
 // groupWordsByLength tests
 
 assert.deepStrictEqual(
-  groupWordsByLength(["cat", "hi", "bat", "hello", "me", "see", "a"]),
-  [["cat", "bat", "see"], ["hi", "me"], ["hello"], ["a"]]
-);
-
-assert.deepStrictEqual(
-  groupWordsByLength(["", "a", "bb", "ccc", "dd", "ee"]),
-  [["", "a"], ["bb", "dd", "ee"], ["ccc"]]
-);
-
-assert.deepStrictEqual(
-  groupWordsByLength(["one", "two", "three", "four", "five", "six"]),
-  [["one", "two", "six"], ["three"], ["four", "five"]]
-);
-
-assert.deepStrictEqual(
-  groupWordsByLength([]),
-  []
-);
-
-console.log("All groupWordsByLength tests passed!");
+    groupWordsByLength(["cat", "hi", "bat", "hello", "me", "see", "a"]),
+    [["hello"], ["cat", "bat", "see"], ["hi", "me"], ["a"]]
+  );
+  
+  assert.deepStrictEqual(
+    groupWordsByLength(["", "a", "bb", "ccc", "dd", "ee"]),
+    [["ccc"], ["bb", "dd", "ee"], ["", "a"]]
+  );
+  
+  assert.deepStrictEqual(
+    groupWordsByLength(["one", "two", "three", "four", "five", "six"]),
+    [["three"], ["four", "five"], ["one", "two", "six"]]
+  );
+  
+  assert.deepStrictEqual(
+    groupWordsByLength([]),
+    []
+  );
+  
+  console.log("All groupWordsByLength tests passed");
 
 // ******************************************************************
 
