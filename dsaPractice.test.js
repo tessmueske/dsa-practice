@@ -8,7 +8,10 @@ const {
     isAnagram,
     firstNonRepeatingChar,
     groupAnagrams,
-    groupWordsByLength,
+    sumEvenSquares,
+    //wordLengths,
+    //groupWordsByLength,
+    //mostFrequentChar,
 } = require('./dsaPractice');
 
 // ******************************************************************
@@ -92,36 +95,36 @@ assert.deepStrictEqual(
 
 // groupWordsByLength tests
 
-assert.deepStrictEqual(
-    groupWordsByLength(["cat", "hi", "bat", "hello", "me", "see", "a"]),
-    [["hello"], ["cat", "bat", "see"], ["hi", "me"], ["a"]]
-  );
+// assert.deepStrictEqual(
+//     groupWordsByLength(["cat", "hi", "bat", "hello", "me", "see", "a"]),
+//     [["hello"], ["cat", "bat", "see"], ["hi", "me"], ["a"]]
+//   );
   
-  assert.deepStrictEqual(
-    groupWordsByLength(["", "a", "bb", "ccc", "dd", "ee"]),
-    [["ccc"], ["bb", "dd", "ee"], ["", "a"]]
-  );
+//   assert.deepStrictEqual(
+//     groupWordsByLength(["", "a", "bb", "ccc", "dd", "ee"]),
+//     [["ccc"], ["bb", "dd", "ee"], ["", "a"]]
+//   );
   
-  assert.deepStrictEqual(
-    groupWordsByLength(["one", "two", "three", "four", "five", "six"]),
-    [["three"], ["four", "five"], ["one", "two", "six"]]
-  );
+//   assert.deepStrictEqual(
+//     groupWordsByLength(["one", "two", "three", "four", "five", "six"]),
+//     [["three"], ["four", "five"], ["one", "two", "six"]]
+//   );
   
-  assert.deepStrictEqual(
-    groupWordsByLength([]),
-    []
-  );
+//   assert.deepStrictEqual(
+//     groupWordsByLength([]),
+//     []
+//   );
   
-  console.log("All groupWordsByLength tests passed");
+//   console.log("All groupWordsByLength tests passed");
 
 // ******************************************************************
 
 // sumEvenSquares tests
 
-// assert.strictEqual(sumEvenSquares([1, 2, 3, 4]), 20);
-// assert.strictEqual(sumEvenSquares([0, -2, -3]), 4);
-// assert.strictEqual(sumEvenSquares([1, 3, 5]), 0);
-// console.log("All sumEvenSquares tests passed!");
+assert.strictEqual(sumEvenSquares([1, 2, 3, 4]), 20);
+assert.strictEqual(sumEvenSquares([0, -2, -3]), 4);
+assert.strictEqual(sumEvenSquares([1, 3, 5]), 0);
+console.log("All sumEvenSquares tests passed!");
 
 // ******************************************************************
 

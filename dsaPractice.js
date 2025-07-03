@@ -126,14 +126,27 @@ function groupWordsByLength(words) {
         // arr["1"] → ["a"]
         
     return ans
-}
+} // this test is not done but i want to work on another one
   
 // ******************************************************************
 
 // Write a function that takes an array of integers and returns the sum of the squares of all even numbers.
 
 function sumEvenSquares(arr) {
-    //code here
+    //initialize a new, blank array
+    let newArr = []
+    //loop through the elements in the array
+    for (let num of arr){
+        if (num % 2 === 0){
+            let sq = num*num
+            newArr.push(sq)
+        }
+    } 
+    let init = 0 //you need to set an init value
+    let sum = newArr.reduce((accumulator, currentValue) => accumulator + currentValue, init)
+    //use reduce on the new array to get the sum
+    return sum
+    //return the sum
 }
   
 // ******************************************************************
