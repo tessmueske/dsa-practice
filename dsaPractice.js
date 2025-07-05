@@ -172,7 +172,34 @@ function wordLengths(arr) {
 // Write a function mostFrequentChar that returns the most frequent character in a string (case-insensitive), ignoring spaces and punctuation.
 
 function mostFrequentChar(arr) {
-    //code here
+    //initialize an empty hashmap
+    hash = {}
+    let cleaned = arr.toLowerCase()
+    console.log("cleaned:", cleaned)
+    count = 0
+    //loop through the characters in the arr
+    for (let char of cleaned){
+        console.log("char in loop:", char)
+        if (!hash[char]){
+            hash[char] = []
+        } 
+        else {
+            count++
+            //we need to make sure this is each key's count, not an overall count
+        }
+    } 
+
+
+
+
+
+
+    let max = Math.max(Object.keys)
+    return max
+    //if the character doesn't have a key in the hashmap, add the character as a key
+    //if the key does exist, increase the count of the character (value) by one
+    //Math.max with the hashmap to see which character has the most
+    //return the most common character
 }
 
   module.exports = {

@@ -11,7 +11,7 @@ const {
     sumEvenSquares,
     wordLengths,
     //groupWordsByLength,
-    //mostFrequentChar,
+    mostFrequentChar,
 } = require('./dsaPractice');
 
 // ******************************************************************
@@ -139,9 +139,9 @@ console.log("All wordLengths tests passed!");
 
 // mostFrequentChar tests
 
-// assert.strictEqual(mostFrequentChar("Hello World"), "l");
-// assert.strictEqual(mostFrequentChar("aaabbc"), "a");
-// assert.strictEqual(mostFrequentChar("122333"), "3");
-// console.log("All mostFrequentChar tests passed!");
+assert.strictEqual(mostFrequentChar("Hello World"), "l");
+assert.strictEqual(mostFrequentChar("aaabbc"), "a");
+assert.strictEqual(mostFrequentChar("122333"), "3");
+console.log("All mostFrequentChar tests passed!");
 
 // ******************************************************************
