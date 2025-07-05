@@ -154,7 +154,17 @@ function sumEvenSquares(arr) {
 // Write a function wordLengths that takes a sentence (string) and returns an array containing the length of each word. Ignore extra spaces.
 
 function wordLengths(arr) {
-    //code here
+    let words = arr.trim().split(/\s+/); //i had originally thought just doing a split was enough, but it wasn't, because then i was just iterating over each character in arr during the loop. so we need a trim because it removes any whitespaces (tabs, spaces, etc) and .split. /\s+/ means \s means “any whitespace” (spaces, tabs, newlines); + means any more of those; 
+    //initialize an empty arr
+    let final = []
+    //so we need to loop through input arr
+    for (let word of words){
+        final.push(word.length)
+    }
+    //for each word in input arr, push the integer of its length into the new arr
+    return final
+    //return the new arr 
+    
 }
 
 // ******************************************************************

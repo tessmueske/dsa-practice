@@ -9,7 +9,7 @@ const {
     firstNonRepeatingChar,
     groupAnagrams,
     sumEvenSquares,
-    //wordLengths,
+    wordLengths,
     //groupWordsByLength,
     //mostFrequentChar,
 } = require('./dsaPractice');
@@ -130,10 +130,10 @@ console.log("All sumEvenSquares tests passed!");
 
 // wordLengths tests
 
-// assert.deepStrictEqual(wordLengths("hello world"), [5, 5]);
-// assert.deepStrictEqual(wordLengths("hi  there   friend"), [2, 5, 6]);
-// assert.deepStrictEqual(wordLengths("  openAI  "), [6]);
-// console.log("All wordLengths tests passed!");
+assert.deepStrictEqual(wordLengths("hello world"), [5, 5]);
+assert.deepStrictEqual(wordLengths("hi  there   friend"), [2, 5, 6]);
+assert.deepStrictEqual(wordLengths("  openAI  "), [6]);
+console.log("All wordLengths tests passed!");
 
 // ******************************************************************
 
