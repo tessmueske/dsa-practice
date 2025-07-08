@@ -181,8 +181,7 @@ function mostFrequentChar(arr) {
             hash[char] = 1 //we set it equal to 1, because that means theres 1 instance of that character
         } 
         else {
-            hash[char]++
-            //we need to make sure this is each key's count, not an overall count
+            hash[char]++ //update each key's value count
         }
     } 
     let maxChar = ''

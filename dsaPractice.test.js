@@ -10,7 +10,7 @@ const {
     groupAnagrams,
     sumEvenSquares,
     wordLengths,
-    //groupWordsByLength,
+    groupWordsByLength,
     mostFrequentChar,
 } = require('./dsaPractice');
 
@@ -95,27 +95,27 @@ assert.deepStrictEqual(
 
 // groupWordsByLength tests
 
-// assert.deepStrictEqual(
-//     groupWordsByLength(["cat", "hi", "bat", "hello", "me", "see", "a"]),
-//     [["hello"], ["cat", "bat", "see"], ["hi", "me"], ["a"]]
-//   );
+assert.deepStrictEqual(
+    groupWordsByLength(["cat", "hi", "bat", "hello", "me", "see", "a"]),
+    [["hello"], ["cat", "bat", "see"], ["hi", "me"], ["a"]]
+  );
   
-//   assert.deepStrictEqual(
-//     groupWordsByLength(["", "a", "bb", "ccc", "dd", "ee"]),
-//     [["ccc"], ["bb", "dd", "ee"], ["", "a"]]
-//   );
+  assert.deepStrictEqual(
+    groupWordsByLength(["", "a", "bb", "ccc", "dd", "ee"]),
+    [["ccc"], ["bb", "dd", "ee"], ["a"], [""]]
+  );
   
-//   assert.deepStrictEqual(
-//     groupWordsByLength(["one", "two", "three", "four", "five", "six"]),
-//     [["three"], ["four", "five"], ["one", "two", "six"]]
-//   );
+  assert.deepStrictEqual(
+    groupWordsByLength(["one", "two", "three", "four", "five", "six"]),
+    [["three"], ["four", "five"], ["one", "two", "six"]]
+  );
   
-//   assert.deepStrictEqual(
-//     groupWordsByLength([]),
-//     []
-//   );
+  assert.deepStrictEqual(
+    groupWordsByLength([]),
+    []
+  );
   
-//   console.log("All groupWordsByLength tests passed");
+  console.log("All groupWordsByLength tests passed");
 
 // ******************************************************************
 
