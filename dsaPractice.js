@@ -126,7 +126,7 @@ function groupWordsByLength(words) {
         // arr["1"] → ["a"]
         
     return ans
-} // this test is not done but i want to work on another one
+} 
   
 // ******************************************************************
 
@@ -195,6 +195,30 @@ function mostFrequentChar(arr) {
     return maxChar
 }
 
+// ******************************************************************
+
+// Write a function longestCommonPrefix that returns the most frequent character in a string (case-insensitive), ignoring spaces and punctuation.
+
+ function longestCommonPrefix(strs) {
+    //set up empty hash map
+    if (strs.length === 0) {
+        return ''
+    }
+    let minLength = Math.min(...strs.map(str => str.length)); 
+    //the length can only be as long as the smallest string?
+    for (let i = 0; i<strs.length; i++){
+        if (x){
+            //do all the strings start with the same first letter?
+            //do they all have the same second letter?
+            //third?
+            //continue until there's a difference
+        } else {
+            return ''
+        }
+    }
+ }
+
+
   module.exports = {
     countVowels,
     squareEvens,
@@ -205,5 +229,6 @@ function mostFrequentChar(arr) {
     groupWordsByLength,
     sumEvenSquares,
     wordLengths,
-    mostFrequentChar
+    mostFrequentChar,
+    longestCommonPrefix,
   };

@@ -12,6 +12,7 @@ const {
     wordLengths,
     groupWordsByLength,
     mostFrequentChar,
+    longestCommonPrefix,
 } = require('./dsaPractice');
 
 // ******************************************************************
@@ -145,3 +146,15 @@ assert.strictEqual(mostFrequentChar("122333"), "3");
 console.log("All mostFrequentChar tests passed!");
 
 // ******************************************************************
+
+// longestCommonPrefix tests
+
+assert.strictEqual(longestCommonPrefix(["flower", "flow", "flight"]), "fl");
+assert.strictEqual(longestCommonPrefix(["dog", "racecar", "car"]), "");
+assert.strictEqual(longestCommonPrefix(["interview", "internet", "internal"]), "inte");
+assert.strictEqual(longestCommonPrefix(["prefix"]), "prefix"); 
+assert.strictEqual(longestCommonPrefix([]), ""); 
+assert.strictEqual(longestCommonPrefix(["", ""]), ""); 
+assert.strictEqual(longestCommonPrefix(["abc", ""]), ""); 
+assert.strictEqual(longestCommonPrefix(["same", "same", "same"]), "same"); 
+console.log("All longestCommonPrefix tests passed!");
