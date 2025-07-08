@@ -174,32 +174,26 @@ function wordLengths(arr) {
 function mostFrequentChar(arr) {
     //initialize an empty hashmap
     hash = {}
-    let cleaned = arr.toLowerCase()
-    console.log("cleaned:", cleaned)
-    count = 0
+    let cleaned = arr.toLowerCase().replace(/[^a-z0-9]/g, ''); //we need the .replace(/[^a-z0-9]/g, '') part because it replaces all starting and trailing non alphanumeric characters from the string with nothing (denoted by the '')
     //loop through the characters in the arr
     for (let char of cleaned){
-        console.log("char in loop:", char)
         if (!hash[char]){
-            hash[char] = []
+            hash[char] = 1 //we set it equal to 1, because that means theres 1 instance of that character
         } 
         else {
-            count++
+            hash[char]++
             //we need to make sure this is each key's count, not an overall count
         }
     } 
-
-
-
-
-
-
-    let max = Math.max(Object.keys)
-    return max
-    //if the character doesn't have a key in the hashmap, add the character as a key
-    //if the key does exist, increase the count of the character (value) by one
-    //Math.max with the hashmap to see which character has the most
-    //return the most common character
+    let maxChar = ''
+    let maxCount = 0
+    for (let char in hash){
+        if (hash[char]>maxCount){
+            maxCount = hash[char]
+            maxChar = char //Every time we find a character with more occurrences than any we've seen before, we update maxCount to store how many times this char appeared and update maxChar to remember which character that was
+        }
+    }
+    return maxChar
 }
 
   module.exports = {
